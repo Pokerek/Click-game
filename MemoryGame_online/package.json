@@ -1,0 +1,19 @@
+{
+  "name": "memorygame_online",
+  "version": "1.0.0",
+  "description": "Online version for memory_game project",
+  "main": "memory.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Memory_game"
+  },
+  "author": "Pokerek",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
