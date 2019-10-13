@@ -1,0 +1,200 @@
+body {
+  background-color: #232323;
+  margin: 0;
+}
+
+/* Head style */
+#game {
+  display: flex;
+  height: 95vh;
+}
+/* Menu style */
+#menu {
+  display: flex;
+  flex-direction: column;
+}
+
+#gameNew, input, .scoreDisplay, h1,{
+  font-size: 2vw;
+  color: white;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 60%;
+  background-color: #232323;
+  color: white;
+  text-align: center;
+}
+
+.menuOption{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 10vw;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #232323;
+  border-bottom: 5px solid white;
+  padding-bottom: 5px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+
+/* Game style */
+#container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.squere, .squereRemove {
+  width: 12vw;
+  height: 12vw;
+  font-size: 0px;
+  margin: 1%;
+  background-image: url("imgs/back.jpg");
+}
+
+.squere img {
+  display: none;
+}
+
+
+
+.selected img {
+  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.actual {
+  color: gold;
+}
+
+.winInfo {
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: green;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.pictureSquere {
+  max-width: 100%;
+}
+
+
+/* Primitive RWD */
+@media (min-width: 1200px) {
+  .squere, .squereRemove {
+    width: 10vw;
+    height: 10vw;
+    font-size: 0px;
+    margin: 1%;
+  }
+  #media {
+    width: 12vw;
+  }
+  #gameNew, input, .scoreDisplay, h1{
+    font-size: 2.5vw;
+  }
+}
+
+@media (min-width: 1051px) and (max-width: 1199px) {
+  .squere, .squereRemove {
+    width: 13vw;
+    height: 13vw;
+    font-size: 0px;
+    margin: 1%;
+  }
+  #media {
+    width: 12vw;
+  }
+  #gameNew, input, .scoreDisplay, h1{
+    font-size: 2.5vw;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1050px) {
+  .squere, .squereRemove {
+    width: 15vw;
+    height: 15vw;
+    font-size: 0px;
+    margin: 1%;
+  }
+  #media {
+    width: 15vw;
+  }
+  #gameNew, input, .scoreDisplay, h1{
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  #game {
+    flex-direction: column;
+  }
+  #menu {
+    flex-direction: row;
+    border-bottom: 2px solid white;
+  }
+  .menuOption{
+    border-bottom: none;
+    border-left: 2px dotted white;
+  }
+
+  .menuOption:first-child {
+    border-left: none;
+  }
+  .squere, .squereRemove {
+    width: 17vw;
+    height: 17vw;
+    font-size: 0px;
+    margin: 1%;
+  }
+  #media {
+    width: 20vw;
+  }
+  #gameNew, input, .scoreDisplay, h1{
+    font-size: 3.25vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #game {
+    flex-direction: column;
+  }
+  #menu {
+    flex-direction: row;
+    border-bottom: 2px solid white;
+  }
+  .menuOption{
+    border-bottom: none;
+    border-left: 2px dotted white;
+  }
+
+  .menuOption:first-child {
+    border-left: none;
+  }
+  .squere, .squereRemove {
+    width: 20vw;
+    height: 20vw;
+    font-size: 0px;
+    margin: 1%;
+  }
+  #gameNew, input, .scoreDisplay, h1{
+    font-size: 3.5vw;
+  }
+}
