@@ -1,4 +1,4 @@
 # Memory_game
-A simple click game.
+A simple memory game for two people.
 
 Enjoj!
